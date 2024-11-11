@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二维码识别页面</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        .qr-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .qr-image {
+            width: 200px;
+            height: 200px;
+            display: block;
+        }
+        .hint-text {
+            text-align: center;
+            color: #666;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="qr-container">
+        <image 
+            class="qr-image"
+            show-menu-by-longpress="{{true}}" 
+            src="qrcode.png"
+            alt="长按识别二维码"
+        />
+        <div class="hint-text">长按图片可识别二维码</div>
+    </div>
+</body>
+</html>
